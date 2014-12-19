@@ -1,3 +1,7 @@
+// include in footer.html
+//<script type="text/javascript" src="js/youtube.js"></script>
+//<script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+
 // Define some variables used to remember state.
 var playlistId, nextPageToken, prevPageToken;
 
@@ -68,7 +72,7 @@ function displayResult(videoSnippet) {
   var title = videoSnippet.title;
   var videoId = videoSnippet.resourceId.videoId;
 
-  $('.video-container').append('<iframe width="560" heigh"315" src="//www.youtube.com/embed/' + videoId + '" frameborder="0" allowfullscreen></iframe>');
+  //$('.video-container').append('<iframe width="560" heigh"315" src="//www.youtube.com/embed/' + videoId + '" frameborder="0" allowfullscreen></iframe>');
   //$('.video-container').fitVids();
 }
 
