@@ -58,7 +58,7 @@ function requestVideoPlaylist(playlistId, pageToken) {
         console.log(item.snippet);
       });
     } else {
-      $('#video-container').html('Sorry you have no uploaded videos');
+      $('.video-container').html('Sorry you have no uploaded videos');
     }
   });
 }
@@ -68,7 +68,8 @@ function displayResult(videoSnippet) {
   var title = videoSnippet.title;
   var videoId = videoSnippet.resourceId.videoId;
 
-  $('#video-container').append('<iframe width="560" height="315" src="//www.youtube.com/embed/' + videoId + '" frameborder="0" allowfullscreen></iframe>' + '</p>');
+  $('.video-container').append('<iframe width="560" heigh"315" src="//www.youtube.com/embed/' + videoId + '" frameborder="0" allowfullscreen></iframe>');
+  //$('.video-container').fitVids();
 }
 
 // Retrieve the next page of videos in the playlist.
